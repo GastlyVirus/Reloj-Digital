@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: black;
+}
+
+body {
+  overflow: hidden;
+}
+
+.primerContenedor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.relojContainer {
+  width: 600px;
+  height: 300px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  border: 1px solid #ffffff;
+  animation: borderanimation 3s ease-in-out infinite alternate;
+}
+
+.relojContainer h1 {
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 60px;
+  margin-top: 20px;
+  background: none;
+  animation: relojContainer 3s ease-in-out infinite alternate;
+}
+
+.horarioActual {
+  color: white;
+  font-size: 150px;
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 25px;
+  background: none;
+  animation: relojContainer 3s ease-in-out infinite alternate;
+}
+
+@keyframes borderanimation {
+  from {
+    box-shadow: 0 0 1px #9dff00, 0 0 2px #9dff00, 0 0 3px #9dff00,
+      0 0 4px #9dff00, 0 0 5px #9dff00, 0 0 6px #9dff00, 0 0 7px #9dff00;
+  }
+  to {
+    box-shadow: 0 0 8px #9dff00, 0 0 10px #9dff00, 0 0 12px #9dff00,
+      0 0 14px #9dff00, 0 0 16px #9dff00, 0 0 18px #9dff00, 0 0 20px #9dff00;
+  }
+}
+
+@keyframes relojContainer {
+  from {
+    text-shadow: 0 0 1px #9dff00, 0 0 3px #9dff00, 0 0 4px #9dff00,
+      0 0 5px #9dff00, 0 0 6px #9dff00, 0 0 7px #9dff00, 0 0 8px #9dff00;
+  }
+  to {
+    text-shadow: 0 0 9px #9dff00, 0 0 10px #9dff00, 0 0 11px #9dff00,
+      0 0 12px #9dff00, 0 0 13px #9dff00, 0 0 14px #9dff00, 0 0 15px #9dff00;
+  }
+}
+
+
+
+
+/*----------------------------Effect Background----------------------------*/
+.circulosContenedor ul li {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  list-style: none;
+  opacity: 0;
+  background: radial-gradient(#9dff00, transparent, transparent);
+  bottom: 0;
+  left: 10vw;
+  animation: animacion 3s linear infinite;
+}
+
+.circulosContenedor ul li:nth-child(2) {
+  left: 15vw;
+  animation-delay: 1s;
+}
+
+.circulosContenedor ul li:nth-child(6) {
+  left: 25vw;
+  animation-delay: 2s;
+}
+
+.circulosContenedor ul li:nth-child(9) {
+  left: 35vw;
+  animation-delay: 3s;
+}
+
+.circulosContenedor ul li:nth-child(5) {
+  left: 45vw;
+  animation-delay: 4s;
+}
+
+.circulosContenedor ul li:nth-child(1) {
+  left: 55vw;
+  animation-delay: 5s;
+}
+
+.circulosContenedor ul li:nth-child(0) {
+  left: 65vw;
+  animation-delay: 1.5s;
+}
+
+.circulosContenedor ul li:nth-child(3) {
+  left: 75vw;
+  animation-delay: 2.5s;
+}
+
+.circulosContenedor ul li:nth-child(7) {
+  left: 85vw;
+  animation-delay: 3.5s;
+}
+
+.circulosContenedor ul li:nth-child(8) {
+  left: 95vw;
+  animation-delay: 4.5s;
+}
+
+.circulosContenedor ul li:nth-child(4) {
+  left: 10vw;
+  animation-delay: 5.5s;
+}
+
+.circulosContenedor ul li:nth-child(10) {
+  left: 87vw;
+  animation-delay: 1.3s;
+}
+
+.circulosContenedor ul li:nth-child(11) {
+  left: 77vw;
+  animation-delay: 2.3s;
+}
+
+.circulosContenedor ul li:nth-child(12) {
+  left: 67vw;
+  animation-delay: 3.3s;
+}
+
+.circulosContenedor ul li:nth-child(13) {
+  left: 57vw;
+  animation-delay: 4.3s;
+}
+
+.circulosContenedor ul li:nth-child(14) {
+  left: 7vw;
+  animation-delay: 5.3s;
+}
+
+.circulosContenedor ul li:nth-child(15) {
+  left: 47vw;
+  animation-delay: 1.7s;
+}
+
+.circulosContenedor ul li:nth-child(16) {
+  left: 37vw;
+  animation-delay: 2.7s;
+}
+
+.circulosContenedor ul li:nth-child(17) {
+  left: 27vw;
+  animation-delay: 3.7s;
+}
+
+.circulosContenedor ul li:nth-child(18) {
+  left: 17vw;
+  animation-delay: 4.7s;
+}
+
+.circulosContenedor ul li:nth-child(19) {
+  left: 20vw;
+  animation-delay: 5.2s;
+}
+
+@keyframes animacion {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    bottom: 0;
+  }
+
+  100% {
+    transform: scale(10);
+    opacity: 0;
+    bottom: 100vh;
+  }
+}
+
+
+
+
+/*----------------------------Celular----------------------------*/
+@media screen and (max-width: 530px){
+
+  .relojContainer {
+    width: 300px;
+    height: 130px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+
+  .relojContainer h1 {
+    font-size: 30px;
+    background: none;
+    margin-top: 15px;
+  }
+
+  .horarioActual {
+    font-size: 50px;
+    background: none;
+    margin-bottom: auto;
+  }
+  .circulosContenedor ul li {
+    width: 5px;
+    height: 5px;
+    background: radial-gradient(#9dff00, transparent, transparent);
+    animation: animacion 4s linear infinite;
+  }
+}
+
+
+
+
+/*----------------------------Tablets----------------------------*/
+@media screen and (min-width: 531px) and (max-width: 768px){
+
+  .relojContainer {
+    width: 500px;
+    height: 230px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+
+  .relojContainer h1 {
+    font-size: 50px;
+    background: none;
+    margin-top: 25px;
+  }
+
+  .horarioActual {
+    font-size: 100px;
+    background: none;
+    margin-bottom: auto;
+  }
+  .circulosContenedor ul li {
+    width: 10px;
+    height: 10px;
+    animation: animacion 4s linear infinite;
+  }
+}
