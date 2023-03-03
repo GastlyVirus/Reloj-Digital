@@ -18,6 +18,7 @@ body {
 }
 
 .relojContainer {
+  cursor: pointer;
   width: 600px;
   height: 300px;
   border-radius: 25px;
@@ -34,6 +35,16 @@ body {
   margin-top: 20px;
   background: none;
   animation: relojContainer 3s ease-in-out infinite alternate;
+}
+
+.relojContainer:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  border: none;
+}
+
+.relojContainer:active {
+  background-color: #9dff00;
+  transform: translateY(4px);
 }
 
 .horarioActual {
@@ -207,24 +218,23 @@ body {
   .relojContainer {
     width: 300px;
     height: 130px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   }
 
   .relojContainer h1 {
     font-size: 30px;
     background: none;
-    margin-top: 15px;
+    margin-top: 18px;
   }
 
   .horarioActual {
     font-size: 50px;
     background: none;
-    margin-bottom: auto;
+    margin-top: auto;
   }
   .circulosContenedor ul li {
     width: 5px;
     height: 5px;
-    background: radial-gradient(#9dff00, transparent, transparent);
+    background: radial-gradient(#15ff00, transparent, transparent);
     animation: animacion 4s linear infinite;
   }
 }
@@ -238,7 +248,6 @@ body {
   .relojContainer {
     width: 500px;
     height: 230px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   }
 
   .relojContainer h1 {
