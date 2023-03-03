@@ -1,10 +1,6 @@
 // Traigo el primer elemento del arreglo "relojContainer" y dentro de una variable
 let reloj = document.getElementsByClassName("horarioActual")[0];
 
-window.addEventListener('click', () => {
-  document.getElementsById("cancion").play();
-});
-
 //--------------------------------------------------------------------------------
 // Creamos un timer con "setInterval()" para hacer que una funcion se repita con un tiempo de retraso entre cada ejecucion. Se pasa dos parametros, la funcion que quieres llamar y el tiempo en milisegundos a retrasar cada ejecucion de la funcion. Se ejecutara hasta que sea borrada.
 setInterval(() => {
