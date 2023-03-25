@@ -25,7 +25,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   border: 1px solid #ffffff;
   animation: borderanimation 2.5s ease-in-out infinite alternate;
@@ -34,7 +33,6 @@ body {
 .relojContainer h1 {
   color: #e100ff;
   text-align: center;
-  border-radius: 25px;
   font-size: 60px;
   margin-top: 20px;
   background: none;
@@ -46,9 +44,36 @@ body {
   font-size: 150px;
   margin-top: 25px;
   text-align: center;
-  border-radius: 25px;
   background: none;
   animation: relojContainer 2.5s ease-in-out infinite alternate;
+}
+
+footer {
+  position: absolute;
+  width: 600px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 380%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(25px);
+  animation: borderanimation 2.5s ease-in-out infinite alternate;
+}
+
+#imageContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background: none;
+}
+
+.socialMedia {
+  width: 30px;
+  margin-top: 10px;
 }
 
 @keyframes borderanimation {
@@ -205,13 +230,14 @@ body {
   .relojContainer {
     width: 300px;
     height: 130px;
+    border-radius: 10px;
     animation: none;
   }
 
   .relojContainer h1 {
     font-size: 30px;
-    margin-top: 8px;  
-    animation: none; 
+    margin-top: 8px;
+    animation: none;
   }
 
   .horarioActual {
@@ -219,6 +245,20 @@ body {
     margin-top: 0;
     animation: none;
   }
+
+  footer {
+    width: 300px;
+    height: 35px;
+    transform: translate(-50%, 220%);
+    border-radius: 10px;
+    animation: none;
+  }
+  
+  .socialMedia {
+    width: 25px;
+    margin-top: 5px;
+  }
+
   .circulosContenedor ul li {
     width: 5px;
     height: 5px;
@@ -238,6 +278,11 @@ body {
 
   .horarioActual {
     font-size: 110px;
+  }
+
+  footer {
+    width: 500px;
+    transform: translate(-50%, 310%);
   }
 
   .circulosContenedor ul li {
