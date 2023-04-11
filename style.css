@@ -37,11 +37,6 @@ body {
   animation: relojContainer 3s ease-in-out infinite alternate;
 }
 
-/* .relojContainer:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
-  border: none;
-} */
-
 .relojContainer:active {
   background-color: #9dff00;
   transform: translateY(4px);
